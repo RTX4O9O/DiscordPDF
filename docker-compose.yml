@@ -1,0 +1,27 @@
+services:
+  discordpdf:
+    build: .
+    image: discordpdf:latest
+    restart: unless-stopped
+    env_file: .env
+
+    # Hardening: read-only image, no extra privileges, every capability dropped.
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+    # User files only ever exist in RAM: /tmp is a tmpfs and nothing else is writable.
+    tmpfs:
+      - /tmp:size=2g,mode=1777
+
+    mem_limit: 2g
+    pids_limit: 512
+
+    # The bot logs no user data, but keep logs small anyway.
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "2"

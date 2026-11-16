@@ -1,0 +1,88 @@
+@page {
+    size: A4;
+    margin: 18mm 16mm 20mm 16mm;
+    @bottom-center {
+        content: counter(page) " / " counter(pages);
+        font-family: 'DocSans', 'DocCJK', sans-serif;
+        font-size: 8pt;
+        color: #888888;
+    }
+}
+
+body {
+    font-family: 'DocSans', 'DocCJK', sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: #1f2328;
+    word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b, th {
+    font-family: 'DocSansBold', 'DocSans', 'DocCJK', sans-serif;
+    font-weight: normal;
+}
+
+h1 { font-size: 20pt; margin: 0 0 10pt 0; padding-bottom: 4pt; border-bottom: 1px solid #d0d7de; }
+h2 { font-size: 16pt; margin: 16pt 0 8pt 0; padding-bottom: 3pt; border-bottom: 1px solid #d0d7de; }
+h3 { font-size: 13pt; margin: 14pt 0 6pt 0; }
+h4 { font-size: 11.5pt; margin: 12pt 0 6pt 0; }
+h5, h6 { font-size: 10.5pt; margin: 10pt 0 4pt 0; }
+
+p { margin: 0 0 8pt 0; }
+
+a { color: #0969da; text-decoration: none; }
+
+ul, ol { margin: 0 0 8pt 0; padding-left: 18pt; }
+li { margin: 2pt 0; }
+
+blockquote {
+    margin: 0 0 8pt 0;
+    padding: 2pt 10pt;
+    color: #57606a;
+    border-left: 3pt solid #d0d7de;
+}
+
+code {
+    font-family: 'DocMono', 'DocCJK', monospace;
+    font-size: 9pt;
+    background-color: #f2f4f6;
+    padding: 1pt 3pt;
+}
+
+pre {
+    font-family: 'DocMono', 'DocCJK', monospace;
+    font-size: 9pt;
+    line-height: 1.4;
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    padding: 8pt;
+    margin: 0 0 8pt 0;
+    white-space: pre-wrap;
+}
+
+pre code { background-color: transparent; padding: 0; }
+
+table {
+    border-collapse: collapse;
+    margin: 0 0 10pt 0;
+    width: 100%;
+    -fs-table-paginate: paginate;
+}
+
+th, td {
+    border: 1px solid #d0d7de;
+    padding: 4pt 6pt;
+    vertical-align: top;
+}
+
+th { background-color: #f6f8fa; }
+
+hr { border: none; border-top: 1px solid #d0d7de; margin: 12pt 0; }
+
+img { max-width: 100%; }
+
+del { color: #6e7781; }
+
+.img-placeholder { color: #6e7781; font-style: italic; }
+
+.page-break { page-break-after: always; }
