@@ -1,4 +1,19 @@
-# discordpdf
+<p align="center">
+  <img src="assets/icon.png" alt="discordpdf icon" width="128" height="128">
+</p>
+
+<h1 align="center">discordpdf</h1>
+
+<p align="center">
+  <a href="https://discord.com/oauth2/authorize?client_id=1572113147630723122&permissions=116736&integration_type=0&scope=bot">
+    <img src="https://img.shields.io/badge/Add%20to%20Discord-%E9%82%80%E8%AB%8B%E6%A9%9F%E5%99%A8%E4%BA%BA-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="邀請官方機器人 Add to Discord">
+  </a>
+</p>
+
+<p align="center">
+  <b>官方機器人：</b><a href="https://discord.com/oauth2/authorize?client_id=1572113147630723122&permissions=116736&integration_type=0&scope=bot">點此邀請到你的伺服器</a>，不必自行架設即可使用。<br>
+  想自己架設？請見下方〈<a href="#快速開始">快速開始</a>〉。
+</p>
 
 (blatantly vibe coded)
 開源、隱私優先的 PDF 工具箱（類似 iLovePDF），以 Discord 機器人作為使用入口。
