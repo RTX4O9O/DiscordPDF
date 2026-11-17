@@ -24,7 +24,7 @@
         <maven.compiler.release>21</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <main.class>io.github.rtx4o9o.discordpdf.Main</main.class>
+        <main.class>me.rtx4090.discordpdf.Main</main.class>
 
         <jda.version>6.5.0</jda.version>
         <pdfbox.version>3.0.8</pdfbox.version>
