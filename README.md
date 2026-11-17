@@ -1,5 +1,6 @@
 # discordpdf
 
+(blatantly vibe coded)
 開源、隱私優先的 PDF 工具箱（類似 iLovePDF），以 Discord 機器人作為使用入口。
 以 Java 21 + [JDA](https://github.com/discord-jda/JDA) 製作。
 
